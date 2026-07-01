@@ -1,1 +1,78 @@
-{ "category": "events", "updated": "2026-07-01", "items": [] }
+{
+  "category": "events",
+  "updated": "2026-07-01",
+  "items": [
+    {
+      "id": "event-001",
+      "en_name": "Singapore Garden Festival 2026",
+      "zh_name": "新加坡花園節 2026",
+      "zh_desc": "第 10 屆新加坡花園節，主題「Carnival of Blooms」，展出世界級花藝設計、大型園藝裝置、熱帶植栽展覽，另有 The Marketplace 市集、美食攤位與現場表演。地點在濱海灣花園，7/4 開幕剛好可以第一天就去逛！建議傍晚前往，天氣較涼且燈光效果更美。",
+      "address": "18 Marina Gardens Drive, Singapore 018953",
+      "area": "Gardens by the Bay",
+      "price_zh": "免費入場（部分展區需購票）",
+      "map_link": "https://maps.google.com/?q=Gardens+by+the+Bay+Singapore",
+      "tags": ["花園節", "免費", "7/4-7/9 期間", "親子友善", "拍照打卡"],
+      "source_url": "https://www.singaporegardenfestival.com/"
+    },
+    {
+      "id": "event-002",
+      "en_name": "NDP Fireworks Preview",
+      "zh_name": "國慶煙火預演",
+      "zh_desc": "新加坡 61 週年國慶煙火預演，7 月每週五晚間 8:00-8:15pm 施放煙火。7/4（五）正好是第一場預演！免費觀賞地點推薦：Helix Bridge、Marina Barrage、濱海灣花園。建議提早 30 分鐘到場卡位，搭配花園節一起安排。",
+      "address": "Marina Bay area, Singapore",
+      "area": "Marina Bay",
+      "price_zh": "免費",
+      "map_link": "https://maps.google.com/?q=Marina+Bay+Singapore",
+      "tags": ["煙火", "免費", "7/4", "夜間活動", "必看"],
+      "source_url": "https://www.ndp.gov.sg/"
+    },
+    {
+      "id": "event-003",
+      "en_name": "All Hail the King Durian Fest",
+      "zh_name": "聖淘沙榴蓮盛宴",
+      "zh_desc": "聖淘沙名勝世界年度榴蓮吃到飽活動，提供貓山王、紅蝦、D24 等頂級品種，搭配熱帶水果與 DJ 音樂。活動日期為 7/3-5 及 7/10-12，每晚 6:00-7:30pm。如果 7/5 在聖淘沙玩動物園可以順路去！榴蓮控不可錯過。",
+      "address": "8 Sentosa Gateway, Singapore 098269",
+      "area": "Sentosa / Resorts World",
+      "price_zh": "需購票（價格待確認）",
+      "map_link": "https://maps.google.com/?q=Resorts+World+Sentosa",
+      "tags": ["榴蓮", "吃到飽", "7/3-7/5", "聖淘沙", "美食活動"],
+      "source_url": "https://www.rwsentosa.com/"
+    },
+    {
+      "id": "event-004",
+      "en_name": "FIFA World Cup 2026 Live Screenings",
+      "zh_name": "FIFA 世界盃轉播",
+      "zh_desc": "2026 世界盃進行中（至 7/20 決賽），新加坡多處免費轉播：Lau Pa Sat 老巴剎（戶外大螢幕）、各大商場、酒吧。適合晚上回飯店前順路看一場。注意比賽多在凌晨或深夜時段（新加坡時間）。",
+      "address": "Various locations, Singapore",
+      "area": "全島各地",
+      "price_zh": "免費（多數場地）",
+      "map_link": "https://maps.google.com/?q=Lau+Pa+Sat+Singapore",
+      "tags": ["世界盃", "免費", "7月整月", "夜間活動", "運動"],
+      "source_url": "https://secretsingapore.co/where-to-watch-world-cup-2026-singapore/"
+    },
+    {
+      "id": "event-005",
+      "en_name": "Singapore GP ALL ACCESS 2.0",
+      "zh_name": "新加坡 F1 大獎賽幕後體驗 2.0",
+      "zh_desc": "免費進入 F1 Pit Building 參觀，可站上頒獎台、進入 Race Control Centre、觀看賽車檔案影片。每週五六日開放至 7/26。需事先上網登記（免費），適合喜歡賽車的人。地點在 Marina Bay 賽道旁。",
+      "address": "F1 Pit Building, Marina Bay, Singapore",
+      "area": "Marina Bay",
+      "price_zh": "免費（需事先登記）",
+      "map_link": "https://maps.google.com/?q=F1+Pit+Building+Singapore",
+      "tags": ["F1", "免費", "週末限定", "互動體驗"],
+      "source_url": "https://singaporegp.sg/en/"
+    },
+    {
+      "id": "event-006",
+      "en_name": "World Oyster Festival 2026",
+      "zh_name": "世界生蠔節 2026",
+      "zh_desc": "Greenwood Fish Market 舉辦第 14 屆世界生蠔節，7 月整月供應來自 9 國共 22 種生蠔品種。適合安排一頓海鮮晚餐。地點在 Bukit Timah 附近，距離市區約 15 分鐘車程。",
+      "address": "Greenwood Fish Market, 34 Greenwood Avenue, Singapore 289236",
+      "area": "Bukit Timah",
+      "price_zh": "依點餐計費",
+      "map_link": "https://maps.google.com/?q=Greenwood+Fish+Market+Singapore",
+      "tags": ["生蠔", "海鮮", "7月整月", "餐廳活動"],
+      "source_url": "https://www.greenwoodfishmarket.com/"
+    }
+  ]
+}

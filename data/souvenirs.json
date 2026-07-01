@@ -1,1 +1,102 @@
-{ "category": "souvenirs", "updated": "2026-07-01", "items": [] }
+{
+  "category": "souvenirs",
+  "updated": "2026-07-01",
+  "items": [
+    {
+      "id": "souvenir-001",
+      "en_name": "Bee Cheng Hiang Bakkwa (Dried Meat)",
+      "zh_name": "美珍香肉乾",
+      "zh_desc": "新加坡最經典伴手禮之一，薄片碳烤豬肉乾，甜鹹交織口感絕佳。推薦買真空包裝方便帶回台灣。牛車水（Chinatown）總店最齊全，機場也有分店但價格稍高。注意：台灣入境可攜帶密封包裝肉乾（需申報），建議確認最新規定。",
+      "address": "189 New Bridge Road, Singapore 059422",
+      "area": "Chinatown",
+      "price_zh": "約 S$15-30/包（依重量）",
+      "map_link": "https://maps.google.com/?q=Bee+Cheng+Hiang+Chinatown+Singapore",
+      "tags": ["必買", "肉乾", "牛車水", "經典伴手禮"],
+      "source_url": "https://www.beechenghiang.com.sg/"
+    },
+    {
+      "id": "souvenir-002",
+      "en_name": "TWG Tea",
+      "zh_name": "TWG 茶葉",
+      "zh_desc": "新加坡本土頂級茶品牌，包裝精美適合送禮。推薦口味：1837 Black Tea、French Earl Grey、Singapore Breakfast Tea。可到 ION Orchard 或 Marina Bay Sands 分店選購，有各種禮盒組合。小鐵罐裝輕便好帶。",
+      "address": "ION Orchard, 2 Orchard Turn, #02-21, Singapore 238801",
+      "area": "Orchard Road",
+      "price_zh": "約 S$20-80（依包裝大小）",
+      "map_link": "https://maps.google.com/?q=TWG+Tea+ION+Orchard+Singapore",
+      "tags": ["必買", "茶葉", "送禮首選", "精品"],
+      "source_url": "https://www.twgtea.com/"
+    },
+    {
+      "id": "souvenir-003",
+      "en_name": "Ya Kun Kaya (Coconut Jam)",
+      "zh_name": "亞坤咖椰醬",
+      "zh_desc": "新加坡國民早餐「咖椰吐司」的靈魂醬料，以椰漿、雞蛋和斑蘭葉製成，香甜濃郁。超市和亞坤門市都買得到，罐裝方便攜帶。回台灣搭配吐司就能重現南洋早餐風味！",
+      "address": "各大超市及 Ya Kun 門市",
+      "area": "全島",
+      "price_zh": "約 S$5-8/罐",
+      "map_link": "https://maps.google.com/?q=Ya+Kun+Kaya+Toast+Singapore",
+      "tags": ["必買", "咖椰醬", "南洋風味", "平價"],
+      "source_url": "https://www.yakun.com/"
+    },
+    {
+      "id": "souvenir-004",
+      "en_name": "Tiger Balm",
+      "zh_name": "虎標萬金油",
+      "zh_desc": "經典東南亞藥膏品牌，起源於新加坡。推薦買組合包（紅色止痛、白色清涼）送長輩超實用。牛車水藥材店和各大超市藥妝店都有，價格比台灣便宜很多。也可順遊虎豹別墅（Haw Par Villa）免費景點。",
+      "address": "各大超市、藥妝店、牛車水",
+      "area": "全島",
+      "price_zh": "約 S$3-10（依大小）",
+      "map_link": "https://maps.google.com/?q=Chinatown+Singapore",
+      "tags": ["必買", "藥膏", "平價", "送長輩"],
+      "source_url": "https://www.tigerbalm.com/"
+    },
+    {
+      "id": "souvenir-005",
+      "en_name": "Irvin's Salted Egg Fish Skin / Potato Chips",
+      "zh_name": "Irvin's 鹹蛋魚皮／洋芋片",
+      "zh_desc": "新加坡近年最紅零食伴手禮！鹹蛋黃口味的炸魚皮和洋芋片，酥脆涮嘴。各大超市和機場免稅店有售，建議多買幾包因為自己一定會吃掉。保存期限約 2-3 個月。",
+      "address": "各大超市、機場免稅店",
+      "area": "全島",
+      "price_zh": "約 S$8-12/包",
+      "map_link": "https://maps.google.com/?q=Irvin's+Salted+Egg+Singapore",
+      "tags": ["必買", "零食", "鹹蛋黃", "熱門伴手禮"],
+      "source_url": "https://www.irvinsaltedegg.com/"
+    },
+    {
+      "id": "souvenir-006",
+      "en_name": "Bengawan Solo Pandan Cake / Kueh Lapis",
+      "zh_name": "班蘭蛋糕／千層糕（Bengawan Solo）",
+      "zh_desc": "Bengawan Solo 是新加坡知名糕點品牌，班蘭蛋糕（Pandan Chiffon）鬆軟香氣十足，千層糕（Kueh Lapis）層次分明口感紮實。機場和各大商場有分店，建議最後一天在機場買確保新鮮。",
+      "address": "Changi Airport T1-T4 及各大商場",
+      "area": "全島 / 機場",
+      "price_zh": "約 S$10-30（依品項）",
+      "map_link": "https://maps.google.com/?q=Bengawan+Solo+Changi+Airport",
+      "tags": ["必買", "糕點", "班蘭", "機場可買"],
+      "source_url": "https://www.bengawansolo.com.sg/"
+    },
+    {
+      "id": "souvenir-007",
+      "en_name": "Merlion Cookies & Chocolates",
+      "zh_name": "魚尾獅造型餅乾／巧克力",
+      "zh_desc": "最「觀光客」但也最有辨識度的紀念品，魚尾獅造型餅乾和巧克力適合大量發送同事朋友。超市和機場免稅店都有，價格便宜量又多。推薦品牌：Merci（巧克力）、The Cookie Museum。",
+      "address": "各大超市、機場免稅店、紀念品店",
+      "area": "全島",
+      "price_zh": "約 S$5-15/盒",
+      "map_link": "https://maps.google.com/?q=Changi+Airport+Singapore",
+      "tags": ["平價", "大量採購", "送同事", "機場可買"],
+      "source_url": ""
+    },
+    {
+      "id": "souvenir-008",
+      "en_name": "Charles & Keith / Pedro",
+      "zh_name": "小 CK（Charles & Keith）/ Pedro",
+      "zh_desc": "新加坡本土時尚品牌，包包和鞋子設計感好、價格比台灣便宜 30-50%。ION Orchard、Vivocity 等商場都有專櫃。Pedro 是同集團男性線，皮夾和商務包很適合送禮。逛街日可以順便買。",
+      "address": "ION Orchard / VivoCity 等各大商場",
+      "area": "Orchard Road / HarbourFront",
+      "price_zh": "約 S$30-100（依品項）",
+      "map_link": "https://maps.google.com/?q=ION+Orchard+Singapore",
+      "tags": ["時尚", "包包", "比台灣便宜", "逛街順便買"],
+      "source_url": "https://www.charleskeith.com/"
+    }
+  ]
+}
