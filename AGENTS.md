@@ -40,24 +40,40 @@ travel research, and general trip questions.
 - Located in Allen's Google Drive > Singapore 2026 folder
 - Auth: OAuth2 credentials via environment variables (`$GOOGLE_CLIENT_ID`, `$GOOGLE_CLIENT_SECRET`, `$GOOGLE_REFRESH_TOKEN`)
 
-**How to record expenses**:
+**IMPORTANT**: This environment does NOT have python3. Use the shell script or direct curl.
+
+**Record expense (shell script)**:
 ```bash
-pip install gspread google-auth 2>/dev/null
-python3 ops/expense_tracker.py add \
-  --date "2026-07-04" \
-  --category "食" \
-  --amount 15.50 \
-  --currency "S$" \
-  --description "松發肉骨茶" \
-  --location "Clarke Quay" \
-  --recorder "Allen"
+sh ops/expense_tracker.sh add "2026-07-04" "食" "15.50" "S$" "松發肉骨茶" "Clarke Quay" "Allen" "manual"
 ```
 
-**Sheet columns**: Date | Category | Amount | Currency | NT$ Equivalent | Description | Location | Recorder | Timestamp | Source
+**Query totals**:
+```bash
+sh ops/expense_tracker.sh total
+```
 
-**Currency options** (dropdown in sheet):
-- `S$` — Singapore Dollar (auto-converts to NT$ at ~23.5x)
-- `$` — USD (auto-converts to NT$ at ~32x)
+**Or use direct curl** (always works — only needs curl):
+```bash
+# 1. Get access token
+TOKEN=$(curl -s -X POST https://oauth2.googleapis.com/token \
+  -d "client_id=${GOOGLE_CLIENT_ID}" \
+  -d "client_secret=${GOOGLE_CLIENT_SECRET}" \
+  -d "refresh_token=${GOOGLE_REFRESH_TOKEN}" \
+  -d "grant_type=refresh_token" | grep -o '"access_token":"[^"]*"' | cut -d'"' -f4)
+
+# 2. Append row (adjust values as needed)
+curl -s -X POST \
+  "https://sheets.googleapis.com/v4/spreadsheets/${EXPENSE_SHEET_ID}/values/Expenses!A:J:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"values":[["DATE","CATEGORY",AMOUNT,"CURRENCY","","DESCRIPTION","LOCATION","RECORDER","TIMESTAMP","SOURCE"]]}'
+```
+
+**Sheet columns**: Date | Category | Amount | Currency | NT$ Equivalent (auto-formula) | Description | Location | Recorder | Timestamp | Source
+
+**Currency dropdown** (column D):
+- `S$` — Singapore Dollar (NT$ Equivalent auto-converts at ~23.5x)
+- `$` — USD (auto-converts at ~32x)
 - `NT$` — New Taiwan Dollar (no conversion)
 
 **Categories**: 食 / 交通 / 門票 / 購物 / 住宿 / 其他
@@ -65,8 +81,8 @@ python3 ops/expense_tracker.py add \
 **Source field**: "manual" for typed input, "OCR receipt" for photo-scanned receipts
 
 **Query commands**:
-- `python3 ops/expense_tracker.py summary --date 2026-07-04` — 某天消費
-- `python3 ops/expense_tracker.py total` — 旅程總消費
+- `sh ops/expense_tracker.sh total` — 旅程總消費
+- `sh ops/expense_tracker.sh summary` — 所有記錄 (raw JSON)
 
 ### 4. OCR Receipt Scanning
 
