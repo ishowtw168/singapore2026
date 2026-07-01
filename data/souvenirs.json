@@ -97,6 +97,54 @@
       "map_link": "https://maps.google.com/?q=ION+Orchard+Singapore",
       "tags": ["時尚", "包包", "比台灣便宜", "逛街順便買"],
       "source_url": "https://www.charleskeith.com/"
+    },
+    {
+      "id": "plush-fennec-fox-12",
+      "en_name": "Econkins Fennec Fox Plush 12\"",
+      "zh_name": "耳廓狐娃娃 12吋",
+      "zh_desc": "Mandai Wildlife Reserve 園區限定耳廓狐絨毛娃娃，約30公分，環保材質製成，大耳朵造型超可愛，適合收藏或送禮。",
+      "address": "80 Mandai Lake Road, Singapore 729826",
+      "area": "Mandai Wildlife Reserve",
+      "price_zh": "S$39",
+      "map_link": "https://maps.google.com/?q=Mandai+Wildlife+Reserve+Singapore",
+      "tags": ["動物園娃娃", "約30cm", "環保材質"],
+      "source_url": "https://shop.mandai.com/collections/plush-toy"
+    },
+    {
+      "id": "plush-hyena-12",
+      "en_name": "Flopsies Hunter Hyena Plush 12\"",
+      "zh_name": "鬣狗娃娃 12吋",
+      "zh_desc": "Mandai Wildlife Reserve 園區販售的鬣狗絨毛娃娃，約30公分，造型逼真可愛，適合喜歡特殊動物的小孩。",
+      "address": "80 Mandai Lake Road, Singapore 729826",
+      "area": "Mandai Wildlife Reserve",
+      "price_zh": "S$29",
+      "map_link": "https://maps.google.com/?q=Mandai+Wildlife+Reserve+Singapore",
+      "tags": ["動物園娃娃", "約30cm"],
+      "source_url": "https://shop.mandai.com/collections/plush-toy"
+    },
+    {
+      "id": "plush-armadillo-12",
+      "en_name": "Armadillo Plush 12\"",
+      "zh_name": "犰狳娃娃 12吋",
+      "zh_desc": "Mandai Wildlife Reserve 園區販售的犰狳絨毛娃娃，約30公分，少見的動物造型很有特色，適合當伴手禮。",
+      "address": "80 Mandai Lake Road, Singapore 729826",
+      "area": "Mandai Wildlife Reserve",
+      "price_zh": "S$29",
+      "map_link": "https://maps.google.com/?q=Mandai+Wildlife+Reserve+Singapore",
+      "tags": ["動物園娃娃", "約30cm", "特殊動物"],
+      "source_url": "https://shop.mandai.com/collections/plush-toy"
+    },
+    {
+      "id": "plush-pangolin-12",
+      "en_name": "Pangolin Plush 12\"",
+      "zh_name": "穿山甲娃娃 12吋",
+      "zh_desc": "Mandai Wildlife Reserve 園區販售的穿山甲絨毛娃娃，約30公分，穿山甲是新加坡的保育代表動物之一，很有紀念意義。",
+      "address": "80 Mandai Lake Road, Singapore 729826",
+      "area": "Mandai Wildlife Reserve",
+      "price_zh": "S$29",
+      "map_link": "https://maps.google.com/?q=Mandai+Wildlife+Reserve+Singapore",
+      "tags": ["動物園娃娃", "約30cm", "保育動物", "紀念價值"],
+      "source_url": "https://shop.mandai.com/collections/plush-toy"
     }
   ]
 }
