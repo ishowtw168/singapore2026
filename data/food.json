@@ -1,1 +1,150 @@
-{ "category": "food", "updated": "2026-07-01", "items": [] }
+{
+  "category": "food",
+  "updated": "2026-07-01",
+  "items": [
+    {
+      "id": "food-001",
+      "en_name": "Tian Tian Hainanese Chicken Rice",
+      "zh_name": "天天海南雞飯",
+      "zh_desc": "米其林必比登推薦，新加坡最有名的雞飯攤位之一，肉質嫩滑、飯粒油香。建議中午前抵達避開排隊人潮，小孩也能接受清淡口味，適合全家共享。",
+      "address": "1 Kadayanallur Street, #01-10/11, Maxwell Food Centre, Singapore 069184",
+      "area": "Maxwell Food Centre, Chinatown",
+      "price_zh": "約 S$5-6/份",
+      "map_link": "https://maps.google.com/?q=Tian+Tian+Hainanese+Chicken+Rice+Maxwell+Food+Centre+Singapore",
+      "tags": ["必吃", "雞飯", "親子友善", "熟食中心"],
+      "source_url": "https://maxwellfoodcentre.com/tian-tian-hainanese-chicken-rice/"
+    },
+    {
+      "id": "food-002",
+      "en_name": "Jumbo Seafood (East Coast Seafood Centre)",
+      "zh_name": "珍寶海鮮樓（東海岸總店）",
+      "zh_desc": "新加坡辣椒螃蟹代表餐廳，1987年創立的東海岸總店可邊用餐邊看海景，適合全家聚餐慶祝。建議提前訂位，晚餐時段人多；螃蟹辣度可請店家調整成小孩能接受的微辣。",
+      "address": "Block 1206 East Coast Parkway, #01-07/08, East Coast Seafood Centre, Singapore 449883",
+      "area": "East Coast Park",
+      "price_zh": "約 S$80-100/隻蟹（依重量）",
+      "map_link": "https://maps.google.com/?q=Jumbo+Seafood+East+Coast+Seafood+Centre+Singapore",
+      "tags": ["必吃", "辣椒螃蟹", "海景", "適合聚餐", "需訂位"],
+      "source_url": "https://www.jumboseafood.com.sg/en/east-coast-seafood-centre"
+    },
+    {
+      "id": "food-003",
+      "en_name": "328 Katong Laksa",
+      "zh_name": "328加東叻沙",
+      "zh_desc": "加東地區最知名的叻沙老店，湯頭濃郁椰香十足，麵條已剪短方便用湯匙直接享用，非常適合小孩食用。曾被主廚Gordon Ramsay挑戰但敗下陣來，是必訪的新加坡娘惹美食代表。",
+      "address": "51 East Coast Road, Singapore 428770",
+      "area": "Katong / East Coast",
+      "price_zh": "約 S$6-8/碗",
+      "map_link": "https://maps.google.com/?q=328+Katong+Laksa+51+East+Coast+Road+Singapore",
+      "tags": ["必吃", "叻沙", "娘惹料理", "親子友善"],
+      "source_url": "https://www.328katonglaksa.sg/"
+    },
+    {
+      "id": "food-004",
+      "en_name": "Hill Street Fried Kway Teow (Bedok South)",
+      "zh_name": "禧街炒粿條（勿洛南）",
+      "zh_desc": "許多在地饕客心中新加坡最好吃的炒粿條，鑊氣十足、豬油香濃，開店前就常大排長龍。建議提早抵達或非用餐尖峰時段前往，可依需求要求少辣、少油。",
+      "address": "16 Bedok South Road, #01-41, Pasar 16@Bedok (Bedok South Food Centre), Singapore 460016",
+      "area": "Bedok South",
+      "price_zh": "約 S$4-6/份",
+      "map_link": "https://maps.google.com/?q=Hill+Street+Fried+Kway+Teow+Bedok+South+Food+Centre+Singapore",
+      "tags": ["必吃", "炒粿條", "在地排隊名店", "熟食中心"],
+      "source_url": "https://www.misstamchiak.com/hill-street-fried-kway-teow-bedok-south-market-and-food-centre-is-this-your-favourite/"
+    },
+    {
+      "id": "food-005",
+      "en_name": "Satay Street @ Lau Pa Sat (Stalls 7 & 8)",
+      "zh_name": "老巴剎沙嗲街（7號、8號攤位）",
+      "zh_desc": "新加坡最大規模的露天沙嗲街，晚上7點後在Boon Tat Street戶外用餐氣氛絕佳，適合全家人一起在星空下吃烤肉串。建議傍晚較早前往入座，肉串現點現烤，小孩也很愛。",
+      "address": "18 Raffles Quay, Lau Pa Sat, Boon Tat Street, Singapore 048582",
+      "area": "Lau Pa Sat, CBD / Raffles Place",
+      "price_zh": "約 S$0.70-1/支（約10支起）",
+      "map_link": "https://maps.google.com/?q=Satay+Street+Lau+Pa+Sat+Boon+Tat+Street+Singapore",
+      "tags": ["必吃", "沙嗲", "戶外用餐", "熟食中心", "傍晚推薦"],
+      "source_url": "https://www.laupasat.sg/sataystreet/"
+    },
+    {
+      "id": "food-006",
+      "en_name": "Geylang Lorong 29 Hokkien Mee (Swee Guan)",
+      "zh_name": "芽籠29巷福建麵",
+      "zh_desc": "1968年開業的炭火福建蝦麵老店，堅持用炭火慢炒黃麵及米粉長達30分鐘，鑊氣香氣濃郁。適合喜歡濃郁海鮮湯汁口味的家庭，建議避開週一（公休）。",
+      "address": "396 East Coast Road, Singapore 428994",
+      "area": "East Coast / Katong",
+      "price_zh": "約 S$6-10/份",
+      "map_link": "https://maps.google.com/?q=Geylang+Lorong+29+Hokkien+Mee+396+East+Coast+Road+Singapore",
+      "tags": ["必吃", "福建蝦麵", "炭火老店", "在地排隊名店"],
+      "source_url": "https://danielfooddiary.com/2020/01/24/geylanglor29hokkienmee/"
+    },
+    {
+      "id": "food-007",
+      "en_name": "Heap Seng Leong (Kopi Gu You & Kaya Toast)",
+      "zh_name": "協成隆咖啡店（牛油咖啡＋咖椰吐司）",
+      "zh_desc": "1970年代懷舊風情老咖啡店，招牌牛油咖啡（Kopi Gu You）加上炭烤咖椰牛油吐司及溏心蛋，是道地新加坡早餐體驗。清晨5點就開始營業，很適合早起的家庭當作第一天抵達的早餐。",
+      "address": "10 North Bridge Road, #01-5109, Singapore 190010",
+      "area": "Lavender / North Bridge Road",
+      "price_zh": "約 S$3-5/套（咖啡+吐司+蛋）",
+      "map_link": "https://maps.google.com/?q=Heap+Seng+Leong+10+North+Bridge+Road+Singapore",
+      "tags": ["必吃", "早餐", "咖椰吐司", "懷舊咖啡店"],
+      "source_url": "https://danielfooddiary.com/2020/08/12/heapsengleong/"
+    },
+    {
+      "id": "food-008",
+      "en_name": "Founder Bak Kut Teh (Balestier)",
+      "zh_name": "發起人肉骨茶（實龍崗路）",
+      "zh_desc": "新加坡知名潮州白胡椒肉骨茶老店，湯頭胡椒味濃郁暖胃，配油條與白飯，是道地在地家庭聚餐選項。營業至凌晨，晚餐後也能前往，適合怕辣的小孩（此為胡椒湯底非辣）。",
+      "address": "347 Balestier Road, Singapore 329777",
+      "area": "Balestier",
+      "price_zh": "約 S$8-12/份",
+      "map_link": "https://maps.google.com/?q=Founder+Bak+Kut+Teh+347+Balestier+Road+Singapore",
+      "tags": ["必吃", "肉骨茶", "潮州料理", "親子友善"],
+      "source_url": "https://www.founderbkt.com.sg/en/our-outlets"
+    },
+    {
+      "id": "food-009",
+      "en_name": "Casuarina Curry (Roti Prata)",
+      "zh_name": "卡蘇里納咖哩（印度煎餅 Roti Prata）",
+      "zh_desc": "1992年創立的印度煎餅名店，提供超過40種口味的Roti Prata（印度煎餅），酥脆有層次，配咖哩醬沾食，是很受小孩歡迎的手抓餅類早餐或宵夜選項。營業至凌晨，全天候皆可前往。",
+      "address": "136-138 Casuarina Road, Singapore 579526",
+      "area": "Sembawang Hills / Thomson",
+      "price_zh": "約 S$1.5-3/份（原味），特殊口味較貴",
+      "map_link": "https://maps.google.com/?q=Casuarina+Curry+136+Casuarina+Road+Singapore",
+      "tags": ["必吃", "印度煎餅", "早餐", "親子友善"],
+      "source_url": "https://www.casuarinacurry.com/"
+    },
+    {
+      "id": "food-010",
+      "en_name": "Nyonya Chendol (Old Airport Road Food Centre)",
+      "zh_name": "娘惹煎蕊（老機場路熟食中心）",
+      "zh_desc": "米其林推薦的娘惹煎蕊（chendol），椰漿、綠色米苔目、紅豆與椰糖交織的清涼甜品，很適合炎熱午後帶小孩消暑。老機場路熟食中心攤位眾多，還可順便嘗試其他經典小吃。",
+      "address": "51 Old Airport Road, #01-115, Old Airport Road Food Centre, Singapore 390051",
+      "area": "Old Airport Road, Mountbatten",
+      "price_zh": "約 S$2.5-3.5/碗",
+      "map_link": "https://maps.google.com/?q=Nyonya+Chendol+Old+Airport+Road+Food+Centre+Singapore",
+      "tags": ["必吃", "娘惹甜品", "消暑甜點", "熟食中心", "親子友善"],
+      "source_url": "https://danielfooddiary.com/2023/05/18/nyonyachendol/"
+    },
+    {
+      "id": "food-011",
+      "en_name": "Maxwell Food Centre (Hawker Centre)",
+      "zh_name": "麥士威熟食中心",
+      "zh_desc": "牛車水最著名的熟食中心之一，集結天天海南雞飯等多家排隊名店，攤位選擇多樣、價格親民，適合帶小孩一次嘗試多種道地小吃。鄰近牛車水地鐵站，交通方便。",
+      "address": "1 Kadayanallur Street, Singapore 069184",
+      "area": "Chinatown",
+      "price_zh": "約 S$4-8/份（依攤位而異）",
+      "map_link": "https://maps.google.com/?q=Maxwell+Food+Centre+1+Kadayanallur+Street+Singapore",
+      "tags": ["必吃", "熟食中心", "多元選擇", "親子友善", "交通方便"],
+      "source_url": "https://maxwellfoodcentre.com/"
+    },
+    {
+      "id": "food-012",
+      "en_name": "Lau Pa Sat (Historic Hawker Market)",
+      "zh_name": "老巴剎（歷史熟食市場）",
+      "zh_desc": "建於1894年的維多利亞式八角形建築，白天為熟食中心，入夜後外圍搖身變成沙嗲街，是體驗新加坡新舊交融美食文化的最佳地點，鄰近萊佛士坊金融區，適合傍晚散步後用餐。",
+      "address": "18 Raffles Quay, Singapore 048582",
+      "area": "CBD / Raffles Place",
+      "price_zh": "約 S$5-15/份（依攤位而異）",
+      "map_link": "https://maps.google.com/?q=Lau+Pa+Sat+18+Raffles+Quay+Singapore",
+      "tags": ["必吃", "熟食中心", "歷史建築", "沙嗲街", "傍晚推薦"],
+      "source_url": "https://www.laupasat.sg/"
+    }
+  ]
+}
