@@ -18,6 +18,31 @@ You are one of several bots that collect, organize, and update travel
 information for this trip. Your job is to help the user research, write,
 and push data to this repo.
 
+## Capabilities
+
+### 1. Travel Info Site
+- Research, write, and push data to `data/*.json`
+- Site auto-deploys via GitHub Pages
+
+### 2. Daily Itinerary Brief (Cron)
+- Every morning at 08:00 SGT, you receive a cron prompt
+- Read `data/itinerary.json`, find today's date, summarize in 繁體中文
+- Format: Day theme + schedule + food + shopping + reminders
+- Tone: 輕鬆親切，像家人群組的旅遊小幫手
+
+### 3. Expense Tracking (Google Sheets)
+- When a user says something like "午餐 $15 SGD hawker center" or "記帳：交通 5.50 MRT"
+- Parse: category, amount, currency, description, location
+- Run: `python3 ops/expense_tracker.py add --category ... --amount ... --description ...`
+- Categories: 食 / 交通 / 門票 / 購物 / 住宿 / 其他
+- Default currency: SGD
+- Query: "今天花了多少？" → `python3 ops/expense_tracker.py summary --date <today>`
+- Query: "總共花了多少？" → `python3 ops/expense_tracker.py total`
+
+### 4. Photo Upload (Google Photos) — Coming Soon
+- When a user sends a photo, upload to Google Photos per-day album
+- Album naming: "Singapore Day N - YYYY-MM-DD"
+
 ## Repo Structure
 
 ```
@@ -31,14 +56,18 @@ singapore2026/
 │   └── app.js         ← fetches data/*.json and renders cards
 ├── data/
 │   ├── meta.json      ← last_updated, trip dates, categories
+│   ├── itinerary.json ← 每日行程 (cron reads this)
 │   ├── transport.json ← 交通
 │   ├── events.json    ← 在地活動慶典
 │   ├── food.json      ← 必吃美食
 │   ├── attractions.json  ← 必玩景點
 │   ├── souvenirs.json    ← 必買伴禮
 │   └── experiences.json  ← 其他旅遊體驗
-├── docs/              ← additional documents (booked tickets, etc.)
-└── ops/               ← operational scripts/templates
+├── docs/              ← additional documents
+│   └── gcp-setup.md   ← GCP Service Account + OAuth setup guide
+├── ops/               ← operational scripts
+│   └── expense_tracker.py ← 記帳工具
+└── photos/            ← photo metadata (if needed)
 ```
 
 ## Data Update Rules
@@ -53,54 +82,22 @@ singapore2026/
    - `en_name` + `address` = English (for navigation / taxi drivers)
    - `zh_name` + `zh_desc` + `price_zh` + `tags` = 繁體中文 (for the family)
 
-## Item Schema (per entry in items[])
+## Expense Parsing Rules
+
+When a user sends expense info in natural language:
+- Extract category from context (food/transport/ticket/shopping/accommodation/other)
+- Default currency is SGD unless stated otherwise
+- If no date specified, use today
+- If location is mentioned, include it
+- After recording, confirm with emoji: ✅ 已記錄: ...
+- Common patterns:
+  - "午餐 $15" → category=食, amount=15, currency=SGD
+  - "MRT 5.50" → category=交通, amount=5.50
+  - "SEA Aquarium 門票 39x4" → category=門票, amount=156, note=4人
+  - "記帳 ION 買衣服 89" → category=購物, amount=89
+
+## Item Schema (per entry in data/*.json items[])
 
 Required: `id`, `en_name`, `zh_name`, `zh_desc`
 Recommended: `address`, `area`, `price_zh`, `map_link`, `tags`, `source_url`
 Optional fields are omitted gracefully by the frontend.
-
-## Git Identity
-
-When committing, use your bot's identity:
-- show-kiro-aws: `kiro-bot@users.noreply.github.com` / `Kiro Bot`
-- show-codex-aws: `codex-bot@users.noreply.github.com` / `Codex Bot`
-- show-hermes-aws: `hermes-bot@users.noreply.github.com` / `Hermes Bot`
-- OAB-Codex-AWS: `fisherivco@users.noreply.github.com` / `OAB-Codex-AWS`
-- chi-kiro-aws: `ichitaiwan-rgb@users.noreply.github.com` / `Chi Kiro Bot`
-- chi-codex-aws: `ichitaiwan-rgb@users.noreply.github.com` / `Chi Codex Bot`
-- chi-hermes-aws: `ichitaiwan-rgb@users.noreply.github.com` / `Chi Hermes Bot`
-
-## Security & Privacy
-
-- **No personal info**: do not commit phone numbers, passport details, flight
-  booking references, or hotel confirmation numbers
-- **No secrets**: never commit tokens, passwords, or API keys
-- **Public repo**: everything pushed is publicly visible
-- **Operational docs** (`docs/booked-tickets.md`): may contain non-sensitive
-  trip logistics only (flight times, hotel names, SIM card plans)
-
-## How to Start Working
-
-```bash
-cd ~/singapore2026
-git pull origin main          # always pull latest first
-# ... make your edits to data/<category>.json ...
-python3 -m json.tool data/<category>.json > /dev/null  # validate
-git add data/<category>.json data/meta.json
-git commit -m "data(<category>): 新增 N 筆項目"
-git push origin main
-```
-
-## Coordination
-
-- Multiple bots may work on different categories simultaneously
-- Each bot owns its assigned category file — no cross-editing without permission
-- If merge conflicts occur, `git pull --rebase` then retry
-- Use GitHub Issues for task tracking (6 open issues, one per category)
-- Check issues before starting work to see what's already been assigned/done
-
-## Questions?
-
-If you're unsure about anything, ask the user. Don't guess on data accuracy —
-it's better to say "I couldn't verify this" than to push incorrect info that
-the family might rely on during the trip.
