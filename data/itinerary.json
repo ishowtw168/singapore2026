@@ -1,0 +1,105 @@
+{
+  "trip_dates": "2026-07-04 ~ 2026-07-09",
+  "timezone": "Asia/Singapore",
+  "updated": "2026-07-01T22:00:00+08:00",
+  "days": [
+    {
+      "date": "2026-07-04",
+      "day_number": 1,
+      "theme": "抵達 + Clarke Quay 周邊",
+      "schedule": [
+        {"time": "11:00", "activity": "抵達新加坡 樟宜機場 T1", "note": "落地後 Avalon Bus / MRT 進市區"},
+        {"time": "14:00", "activity": "Check-in 飯店", "note": "放行李休息"},
+        {"time": "16:00", "activity": "Clarke Quay 海邊", "note": "探索合安頓資"},
+        {"time": "18:00", "activity": "晚餐", "note": "松發肉骨茶 / 了凡飯室"}
+      ],
+      "highlights": {
+        "food": ["松發肉骨茶", "了凡飯室"],
+        "shopping": ["機場 Duty Free"],
+        "reminders": ["機場買度 SIM 卡（或先開好 eSIM）", "換新加坡幣（ATM）"]
+      }
+    },
+    {
+      "date": "2026-07-05",
+      "day_number": 2,
+      "theme": "文化探索 + 朝聖",
+      "schedule": [
+        {"time": "08:00", "activity": "早餐", "note": "周邊 Hawker 或 Kopitiam"},
+        {"time": "10:00", "activity": "Gardens by the Bay", "note": "Cloud Forest + Flower Dome"},
+        {"time": "13:00", "activity": "午餐 Marina Bay Sands area", "note": ""},
+        {"time": "15:00", "activity": "ArtScience Museum", "note": "小孩友善適齡"},
+        {"time": "18:00", "activity": "Spectra Water Show", "note": "Marina Bay Sands Event Plaza"}
+      ],
+      "highlights": {
+        "food": ["Kopitiam 咖椰吐司", "Lau Pa Sat 沙爹"],
+        "shopping": ["Gardens by the Bay Gift Shop"],
+        "reminders": ["Gardens by the Bay 預訂買月票", "帶多喝水(天氣熱)"]
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "day_number": 3,
+      "theme": "聖淘沙 + 市區跑",
+      "schedule": [
+        {"time": "09:00", "activity": "出發 聖淘沙 Sentosa", "note": "Cable Car 或 Sentosa Express"},
+        {"time": "10:00", "activity": "海洋館 / SEA Aquarium", "note": "小孩最愛"},
+        {"time": "13:00", "activity": "午餐 VivoCity", "note": ""},
+        {"time": "15:00", "activity": "Orchard Road 購物街", "note": "ION Orchard, Takashimaya"},
+        {"time": "18:00", "activity": "晚餐 - Newton Food Centre", "note": "沙嗲遙飯"}
+      ],
+      "highlights": {
+        "food": ["Newton Food Centre 烤蝦蝦", "VivoCity 美食街"],
+        "shopping": ["ION Orchard", "Takashimaya", "Charles & Keith"],
+        "reminders": ["SEA Aquarium 預訂用票", "帶多防曬霜"]
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "day_number": 4,
+      "theme": "動物園日 + 牛車水",
+      "schedule": [
+        {"time": "08:30", "activity": "Singapore Zoo", "note": "早上較涼出發 Mandai Wildlife Reserve"},
+        {"time": "12:00", "activity": "動物園內午餐", "note": "園內餐廳"},
+        {"time": "14:00", "activity": "River Wonders", "note": "淡水魚，大熊貓近距離接觸"},
+        {"time": "17:00", "activity": "回市區休息", "note": "小孩駕累了"},
+        {"time": "19:00", "activity": "晚餐 - Chinatown 牛車水街", "note": "雞飯、海南龍蝦、娘惠頓指"}
+      ],
+      "highlights": {
+        "food": ["文慶街雞飯", "娘惠頓指", "海南龍蝦"],
+        "shopping": ["Chinatown 伴手禮店"],
+        "reminders": ["動物園開園時間確認", "帶多水", "防曬霜"]
+      }
+    },
+    {
+      "date": "2026-07-08",
+      "day_number": 5,
+      "theme": "自由活動 + 最後購物",
+      "schedule": [
+        {"time": "09:00", "activity": "新加坡 Flyer 或 Jewel Changi 星耀大瀑", "note": "擇寬容量選擇"},
+        {"time": "12:00", "activity": "午餐 + Takashimaya B2 駝飯料理 / 最後補貨", "note": ""},
+        {"time": "15:00", "activity": "最後自由時光", "note": "自由散步 / 裝貨 / 飯店泡池"},
+        {"time": "18:00", "activity": "晚餐 - 最後晚大", "note": "挑揀好傢伙"}
+      ],
+      "highlights": {
+        "food": ["最後機會試試", "BreadTalk / Toast Box"],
+        "shopping": ["Jewel Changi DTF", "Takashimaya"],
+        "reminders": ["確認伴手禮白單完了", "明天飛機更信過查"]
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "day_number": 6,
+      "theme": "回家 — 返程",
+      "schedule": [
+        {"time": "08:00", "activity": "Check-out 退房", "note": "確認行李打包"},
+        {"time": "10:00", "activity": "往機場", "note": "提早到機場 Jewel 最後逛"},
+        {"time": "12:00", "activity": "飛機", "note": "確認訂位 / Airline app checkin"}
+      ],
+      "highlights": {
+        "food": ["Jewel Changi 最後一餐"],
+        "shopping": ["Jewel Changi Duty Free 最後機會"],
+        "reminders": ["行李超重檢查（每人 23kg）", "動情 DTF 是否記得了", "切換eSIM / SIM", "收攏行動電池 (飛機手提行)"]
+      }
+    }
+  ]
+}
