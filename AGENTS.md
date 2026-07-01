@@ -104,4 +104,3 @@ git push origin main
 If you're unsure about anything, ask the user. Don't guess on data accuracy —
 it's better to say "I couldn't verify this" than to push incorrect info that
 the family might rely on during the trip.
-<!-- private-repo-verify 1782900529 -->
