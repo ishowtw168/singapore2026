@@ -1,0 +1,15 @@
+{
+  "trip_start": "2026-07-04",
+  "trip_end": "2026-07-09",
+  "hotel": { "en_name": "TBD (Allen to provide)", "zh_name": "待提供", "address": "", "area": "" },
+  "last_updated": "2026-07-01",
+  "categories": ["transport", "events", "food", "attractions", "souvenirs", "experiences"],
+  "category_labels": {
+    "transport": { "zh": "交通", "en": "Transport" },
+    "events": { "zh": "在地活動慶典", "en": "Events & Festivals" },
+    "food": { "zh": "必吃美食", "en": "Must-Eat Food" },
+    "attractions": { "zh": "必玩景點", "en": "Attractions" },
+    "souvenirs": { "zh": "必買伴禮", "en": "Souvenirs" },
+    "experiences": { "zh": "更好的旅遊體驗", "en": "Experiences" }
+  }
+}
