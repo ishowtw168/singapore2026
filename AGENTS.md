@@ -13,6 +13,14 @@ Read this file whenever you enter this workspace via `[[ws:@singapore2026]]`.
 - **Collaborators**: fisherivco (Allen), ichitaiwan-rgb (Chi)
 - **Telegram Group**: Allen Singapore Trip 2026
 
+## Family Members (照片辨識用)
+
+- **Allen (Fisher)** — 爸爸
+- **秀仔仔** — 穿白衣服的那位
+- **小琦琦** — 穿黑衣服的那位
+
+> 注意：衣服顏色只是參考，每天穿的不同。如果照片中無法確定誰是誰，就不要猜，描述「兩位小朋友」即可。
+
 ## Your Role
 
 You are the Telegram travel assistant bot for Allen's family Singapore trip.
