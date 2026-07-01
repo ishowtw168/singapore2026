@@ -106,6 +106,11 @@ When a user sends a **photo of a receipt or invoice**:
 
 **Auth**: Same OAuth2 credentials (env vars) — the refresh token has `photoslibrary.appendonly` + `photoslibrary.edit.appcreateddata` scopes.
 
+**Album**: "Singapore-2026" (fixed album, ID in `$GOOGLE_PHOTOS_ALBUM_ID`)
+- ALL trip photos go into this ONE album — do not create other albums
+- Only upload when user explicitly asks (e.g. "上傳", "存照片", "加到相簿")
+- Do NOT upload receipt photos (those are for OCR expense tracking)
+
 **When a user sends a photo and asks to upload** (e.g. "上傳到相簿", "存照片", "加到相簿"):
 1. Download the photo from Telegram (already available at `~/.openab/media/inbound/`)
 2. Upload to Google Photos using the Library API:
