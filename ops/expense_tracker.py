@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Singapore 2026 Trip Expense Tracker
-Records expenses to a shared Google Sheet via Service Account.
+Records expenses to a shared Google Sheet via OAuth2 credentials.
 
 Usage (by Kiro CLI agent):
   python3 ops/expense_tracker.py add --date "2026-07-04" --category "食" \
@@ -11,8 +11,10 @@ Usage (by Kiro CLI agent):
   python3 ops/expense_tracker.py total
 
 Environment:
-  GOOGLE_SA_KEY_JSON - Service Account key JSON (string, not file path)
-  EXPENSE_SHEET_ID  - Google Sheet ID (from URL)
+  GOOGLE_CLIENT_ID      - OAuth2 client ID
+  GOOGLE_CLIENT_SECRET  - OAuth2 client secret
+  GOOGLE_REFRESH_TOKEN  - OAuth2 refresh token
+  EXPENSE_SHEET_ID      - Google Sheet ID (from URL)
 """
 
 import argparse
@@ -23,31 +25,38 @@ from datetime import datetime
 
 
 def get_sheet_client():
-    """Initialize gspread with service account credentials."""
+    """Initialize gspread with OAuth2 user credentials."""
     try:
         import gspread
-        from google.oauth2.service_account import Credentials
+        from google.oauth2.credentials import Credentials
+        from google.auth.transport.requests import Request
     except ImportError:
         print("ERROR: gspread and google-auth not installed.")
         print("Install: pip install gspread google-auth")
         sys.exit(1)
 
-    sa_key_json = os.environ.get("GOOGLE_SA_KEY_JSON")
-    if not sa_key_json:
-        print("ERROR: GOOGLE_SA_KEY_JSON environment variable not set.")
-        sys.exit(1)
-
+    client_id = os.environ.get("GOOGLE_CLIENT_ID")
+    client_secret = os.environ.get("GOOGLE_CLIENT_SECRET")
+    refresh_token = os.environ.get("GOOGLE_REFRESH_TOKEN")
     sheet_id = os.environ.get("EXPENSE_SHEET_ID")
+
+    if not all([client_id, client_secret, refresh_token]):
+        print("ERROR: GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, and GOOGLE_REFRESH_TOKEN must be set.")
+        sys.exit(1)
     if not sheet_id:
         print("ERROR: EXPENSE_SHEET_ID environment variable not set.")
         sys.exit(1)
 
-    creds_dict = json.loads(sa_key_json)
-    scopes = [
-        "https://www.googleapis.com/auth/spreadsheets",
-        "https://www.googleapis.com/auth/drive",
-    ]
-    creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
+    creds = Credentials(
+        token=None,
+        refresh_token=refresh_token,
+        token_uri="https://oauth2.googleapis.com/token",
+        client_id=client_id,
+        client_secret=client_secret,
+        scopes=["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"],
+    )
+    creds.refresh(Request())
+
     client = gspread.authorize(creds)
     sheet = client.open_by_key(sheet_id).sheet1
     return sheet
