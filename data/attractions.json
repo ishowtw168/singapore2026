@@ -1,1 +1,126 @@
-{ "category": "attractions", "updated": "2026-07-01", "items": [] }
+{
+  "category": "attractions",
+  "updated": "2026-07-01",
+  "items": [
+    {
+      "id": "mandai-wildlife",
+      "en_name": "Mandai Wildlife Reserve (5-Park Pass)",
+      "zh_name": "萬態野生動物保育區（5園通票）",
+      "zh_desc": "已購買 5 園區一日通票：Singapore Zoo（動物園）、Bird Paradise（飛禽公園）、River Wonders（河川生態園）、Rainforest Wild（雨林野趣）。7/5 使用，建議一早 8:30 開園入場，先走動物園再到飛禽公園，下午走河川生態園。園區很大建議穿舒適鞋子、帶水壺和防曬。",
+      "address": "80 Mandai Lake Road, Singapore 729826",
+      "area": "Mandai",
+      "price_zh": "S$118/人（已購 4 張，共 S$472）",
+      "map_link": "https://maps.google.com/?q=Mandai+Wildlife+Reserve+Singapore",
+      "tags": ["已預訂", "動物園", "親子必去", "整天行程", "7/5"],
+      "source_url": "https://www.mandai.com/en/singapore-zoo.html"
+    },
+    {
+      "id": "uss",
+      "en_name": "Universal Studios Singapore",
+      "zh_name": "新加坡環球影城",
+      "zh_desc": "東南亞唯一環球影城，位於聖淘沙名勝世界。已購 4 張成人票（有效期 7/1~8/29），建議安排整天遊玩。必玩：變形金剛 3D 對決、木乃伊復仇記、侏羅紀河流探險。開園即入場先衝熱門設施，或下載 Universal Studios Singapore App 查看即時等候時間。禁止攜帶外食。",
+      "address": "8 Sentosa Gateway, Singapore 098269",
+      "area": "Sentosa / Resorts World",
+      "price_zh": "已購買（4 張成人票）",
+      "map_link": "https://maps.google.com/?q=Universal+Studios+Singapore",
+      "tags": ["已預訂", "聖淘沙", "遊樂園", "整天行程"],
+      "source_url": "https://www.rwsentosa.com/en/attractions/universal-studios-singapore"
+    },
+    {
+      "id": "sea-oceanarium",
+      "en_name": "Singapore Oceanarium (S.E.A. Aquarium)",
+      "zh_name": "新加坡海洋館",
+      "zh_desc": "全球最大水族館之一，超過 10 萬隻海洋生物。已購 4 張成人票（有效期 7/1~8/29），同日可重複入場（需取得 re-entry handstamp）。建議搭配 Luge 當天（7/6 聖淘沙日）一起安排，下午 Luge 結束後入場剛好避開人潮。鯊魚海域和大型觀景窗是必看亮點。",
+      "address": "8 Sentosa Gateway, Singapore 098269",
+      "area": "Sentosa / Resorts World",
+      "price_zh": "已購買（4 張成人票）",
+      "map_link": "https://maps.google.com/?q=Singapore+Oceanarium+Sentosa",
+      "tags": ["已預訂", "聖淘沙", "水族館", "親子友善"],
+      "source_url": "https://www.singaporeoceanarium.com/"
+    },
+    {
+      "id": "skyline-luge",
+      "en_name": "Skyline Luge Sentosa",
+      "zh_name": "聖淘沙斜坡滑車",
+      "zh_desc": "搭空中吊椅到山頂再滑下來，刺激又安全，4 輪體驗已預訂（7/6 10:00 非高峰時段）。適合全家同樂，有多條不同難度的滑道。建議穿包鞋、戴帽子防曬。Klook 預訂含彈性取消，每人有獨立兌換碼。",
+      "address": "45 Siloso Beach Walk, Singapore 099003",
+      "area": "Sentosa",
+      "price_zh": "已購買（4 人 × 4 輪）",
+      "map_link": "https://maps.google.com/?q=Skyline+Luge+Sentosa+Singapore",
+      "tags": ["已預訂", "聖淘沙", "親子友善", "刺激", "7/6"],
+      "source_url": "https://www.skylineluge.com/en/sentosa/"
+    },
+    {
+      "id": "gardens-by-the-bay",
+      "en_name": "Gardens by the Bay",
+      "zh_name": "濱海灣花園",
+      "zh_desc": "新加坡地標級景點，戶外花園區免費入場。超級樹燈光秀（Garden Rhapsody）每晚 19:45 & 20:45 兩場免費觀賞。付費區包括 Cloud Forest（雲霧林）和 Flower Dome（花穹），建議傍晚入場先看室內再出來看燈光秀。室內展館冷氣涼爽，適合白天太熱時避暑。",
+      "address": "18 Marina Gardens Drive, Singapore 018953",
+      "area": "Marina Bay",
+      "price_zh": "戶外免費；室內館 S$28-53/成人",
+      "map_link": "https://maps.google.com/?q=Gardens+by+the+Bay+Singapore",
+      "tags": ["免費", "燈光秀", "地標", "親子友善", "傍晚推薦"],
+      "source_url": "https://www.gardensbythebay.com.sg/"
+    },
+    {
+      "id": "merlion-park",
+      "en_name": "Merlion Park",
+      "zh_name": "魚尾獅公園",
+      "zh_desc": "新加坡最具代表性的打卡地標，8.6 公尺高的魚尾獅雕像全天 24 小時免費參觀。可同時欣賞金沙酒店、摩天輪和濱海灣天際線。建議傍晚前往，白天拍照 + 晚上看夜景一次搞定。從 Raffles Place MRT 步行約 10 分鐘。",
+      "address": "1 Fullerton Road, Singapore 049213",
+      "area": "Marina Bay",
+      "price_zh": "免費",
+      "map_link": "https://maps.google.com/?q=Merlion+Park+Singapore",
+      "tags": ["免費", "地標", "打卡", "傍晚推薦"],
+      "source_url": "https://www.visitsingapore.com/see-do-singapore/recreation-leisure/viewpoints/merlion-park/"
+    },
+    {
+      "id": "marina-bay-sands-skypark",
+      "en_name": "Marina Bay Sands SkyPark Observation Deck",
+      "zh_name": "金沙酒店空中花園觀景台",
+      "zh_desc": "從 57 樓 200 公尺高空俯瞰新加坡全景，可同時看到濱海灣花園、城市天際線和海峽。建議傍晚時段前往，白天視野 + 夕陽 + 夜景一次滿足。提前線上購票可避免現場排隊。",
+      "address": "10 Bayfront Avenue, Singapore 018956",
+      "area": "Marina Bay",
+      "price_zh": "成人 S$32，線上購票較便宜",
+      "map_link": "https://maps.google.com/?q=Marina+Bay+Sands+SkyPark+Observation+Deck",
+      "tags": ["觀景", "地標", "夜景", "傍晚推薦"],
+      "source_url": "https://www.marinabaysands.com/sands-skypark.html"
+    },
+    {
+      "id": "chinatown",
+      "en_name": "Chinatown & Buddha Tooth Relic Temple",
+      "zh_name": "牛車水（中國城）& 佛牙寺",
+      "zh_desc": "新加坡歷史文化區，充滿傳統店屋建築、廟宇和美食。必訪佛牙寺龍華院（免費入場），頂樓花園可眺望牛車水。沿途有大量紀念品店和在地小吃攤。建議搭配 Maxwell Food Centre 午餐一起安排。MRT Chinatown 站出來即到。",
+      "address": "288 South Bridge Road, Singapore 058840",
+      "area": "Chinatown",
+      "price_zh": "免費（寺廟免費入場）",
+      "map_link": "https://maps.google.com/?q=Buddha+Tooth+Relic+Temple+Singapore",
+      "tags": ["免費", "文化", "寺廟", "購物", "美食"],
+      "source_url": "https://www.visitsingapore.com/see-do-singapore/culture-heritage/heritage-discovery/chinatown/"
+    },
+    {
+      "id": "jewel-changi",
+      "en_name": "Jewel Changi Airport",
+      "zh_name": "星耀樟宜",
+      "zh_desc": "機場旁的巨型室內花園商場，主打 40 公尺高 Rain Vortex（雨漩渦）室內瀑布，免費觀賞。頂樓 Canopy Park 付費區有天空之網、迷宮等親子設施。建議安排在抵達或離境當天順路逛，商場也有大量餐廳和商店。",
+      "address": "78 Airport Boulevard, Singapore 819666",
+      "area": "Changi Airport",
+      "price_zh": "免費入場；Canopy Park 成人 S$27",
+      "map_link": "https://maps.google.com/?q=Jewel+Changi+Airport+Singapore",
+      "tags": ["免費", "機場", "親子友善", "室內", "購物"],
+      "source_url": "https://www.jewelchangiairport.com/"
+    },
+    {
+      "id": "spectra-light-show",
+      "en_name": "Spectra — Light & Water Show",
+      "zh_name": "Spectra 水舞燈光秀",
+      "zh_desc": "金沙酒店前方 Event Plaza 的免費水舞燈光秀，結合噴泉、雷射、燈光與音樂的 15 分鐘表演。每晚 20:00 & 21:00 兩場（週五六加演 22:00）。最佳觀賞位置在 Event Plaza 或對面 Merlion Park。建議搭配魚尾獅公園散步一起安排。",
+      "address": "2 Bayfront Avenue, Event Plaza, Singapore 018972",
+      "area": "Marina Bay",
+      "price_zh": "免費",
+      "map_link": "https://maps.google.com/?q=Spectra+Light+Show+Marina+Bay+Sands",
+      "tags": ["免費", "燈光秀", "夜間", "親子友善"],
+      "source_url": "https://www.marinabaysands.com/entertainment/spectra.html"
+    }
+  ]
+}

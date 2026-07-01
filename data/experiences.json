@@ -1,1 +1,102 @@
-{ "category": "experiences", "updated": "2026-07-01", "items": [] }
+{
+  "category": "experiences",
+  "updated": "2026-07-01",
+  "items": [
+    {
+      "id": "weather-prep",
+      "en_name": "Singapore July Weather Tips",
+      "zh_name": "7 月天氣與穿著建議",
+      "zh_desc": "新加坡 7 月平均氣溫 25-31°C，全年如夏且潮濕（濕度 70-90%）。午後常有短暫陣雨（約 30-60 分鐘），建議隨身攜帶輕便雨傘或雨衣。穿著以透氣排汗衣物為主，但商場和地鐵冷氣很強，建議帶一件薄外套。防曬乳、遮陽帽和水壺是每日必備。",
+      "address": "",
+      "area": "全新加坡",
+      "price_zh": "",
+      "map_link": "",
+      "tags": ["天氣", "穿著", "實用技巧", "必看"],
+      "source_url": "https://www.nea.gov.sg/weather"
+    },
+    {
+      "id": "payment-tips",
+      "en_name": "Payment Methods in Singapore",
+      "zh_name": "新加坡付款方式建議",
+      "zh_desc": "新加坡電子支付非常普及：Visa/Mastercard 感應式信用卡幾乎全面通用（含 MRT、公車、便利商店、餐廳）。建議帶 1-2 張感應式信用卡為主、少量現金（約 S$100-200）備用。熟食中心部分攤位僅收現金。Apple Pay / Google Pay 也廣泛支持。匯率：1 SGD ≈ 24 TWD（2026年參考）。",
+      "address": "",
+      "area": "全新加坡",
+      "price_zh": "",
+      "map_link": "",
+      "tags": ["付款", "信用卡", "現金", "實用技巧"],
+      "source_url": ""
+    },
+    {
+      "id": "packing-list",
+      "en_name": "Packing Essentials for Singapore",
+      "zh_name": "行李打包必備清單",
+      "zh_desc": "必帶物品：1) 防曬乳 SPF50+（戶外景點多）、2) 輕便摺疊雨傘、3) 薄外套（室內冷氣用）、4) 舒適好走的鞋（動物園和聖淘沙走路多）、5) 行動電源（整天在外）、6) 萬用轉接頭（新加坡用英規三腳插頭 Type G）、7) 夾腳拖或涼鞋（聖淘沙沙灘）。液體類須托運。",
+      "address": "",
+      "area": "",
+      "price_zh": "",
+      "map_link": "",
+      "tags": ["行前準備", "行李", "實用技巧", "必看"],
+      "source_url": ""
+    },
+    {
+      "id": "daily-schedule-tip",
+      "en_name": "Recommended Daily Schedule Pattern",
+      "zh_name": "每日行程節奏建議",
+      "zh_desc": "新加坡戶外行程建議趁早上涼爽時進行（8:30-12:00），中午最熱時段（12:00-15:00）安排室內景點或商場用餐休息，傍晚再出來看夜景和免費燈光秀。動物園、Luge 這類戶外行程務必一早就去。環球影城可以一整天待在裡面。記得多喝水、適時休息，新加坡溫度和濕度容易中暑。",
+      "address": "",
+      "area": "",
+      "price_zh": "",
+      "map_link": "",
+      "tags": ["行程規劃", "避暑", "實用技巧"],
+      "source_url": ""
+    },
+    {
+      "id": "water-drinking",
+      "en_name": "Singapore Tap Water is Drinkable",
+      "zh_name": "新加坡自來水可直接飲用",
+      "zh_desc": "新加坡自來水符合 WHO 標準，可直接從水龍頭飲用，無需另外購買瓶裝水。建議自備水壺每日出門前裝滿，景點和商場內的飲水機也可免費補水。便利商店瓶裝水約 S$1-2。天氣炎熱容易脫水，每人每天建議飲水 2-3 公升。",
+      "address": "",
+      "area": "全新加坡",
+      "price_zh": "自來水免費；瓶裝水 S$1-2",
+      "map_link": "",
+      "tags": ["飲水", "省錢", "實用技巧"],
+      "source_url": "https://www.pub.gov.sg/watersupply/waterquality"
+    },
+    {
+      "id": "safety-laws",
+      "en_name": "Singapore Laws & Safety Tips",
+      "zh_name": "新加坡法規與安全提醒",
+      "zh_desc": "新加坡治安極佳，但法規嚴格務必注意：1) 禁止攜帶口香糖入境、2) 禁止在公共場所吸煙（罰款 S$300 起）、3) 亂丟垃圾罰款 S$300、4) MRT 內禁止飲食（罰款 S$500）、5) 橫跨馬路必須走斑馬線。遵守規則即可，整體環境非常安全友善，適合帶家人旅遊。",
+      "address": "",
+      "area": "全新加坡",
+      "price_zh": "",
+      "map_link": "",
+      "tags": ["法規", "安全", "注意事項", "必看"],
+      "source_url": ""
+    },
+    {
+      "id": "grab-food-delivery",
+      "en_name": "GrabFood for Lazy Meals",
+      "zh_name": "用 GrabFood 外送解決懶人餐",
+      "zh_desc": "Grab Travel Pass 內含美食外送折扣券（3×SGD 3 OFF delivery、3×15% OFF 自取）。玩累了不想出門覓食時，可用 Grab App 叫外送到飯店。自取（Self-Pickup）折扣更高，適合飯店附近有餐廳群的情況。建議先下載 Grab App 並綁定付款方式。",
+      "address": "",
+      "area": "全新加坡",
+      "price_zh": "搭配折扣券使用",
+      "map_link": "",
+      "tags": ["外送", "Grab", "省力", "折扣券"],
+      "source_url": "https://www.grab.com/sg/food/"
+    },
+    {
+      "id": "timezone-language",
+      "en_name": "Time Zone & Language",
+      "zh_name": "時區與語言溝通",
+      "zh_desc": "新加坡時區 UTC+8，與台灣完全相同，無時差！官方語言為英語、華語、馬來語、泰米爾語。華語在多數地方通用（尤其熟食中心、牛車水、計程車司機），溝通不成問題。Google 翻譯可作為備用工具。地鐵和公車廣播有英語和華語。",
+      "address": "",
+      "area": "全新加坡",
+      "price_zh": "",
+      "map_link": "",
+      "tags": ["語言", "時區", "溝通", "實用技巧"],
+      "source_url": ""
+    }
+  ]
+}
