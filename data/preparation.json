@@ -1,0 +1,102 @@
+{
+  "category": "preparation",
+  "updated": "2026-07-02",
+  "sections": [
+    {
+      "id": "documents",
+      "title": "證件與文件",
+      "icon": "📄",
+      "items": [
+        {"text": "護照（有效期6個月以上）", "priority": "必備"},
+        {"text": "電子機票列印備份", "priority": "必備"},
+        {"text": "飯店訂房確認單（V Hotel Lavender + 金沙酒店）", "priority": "必備"},
+        {"text": "動物園三園門票 QR Code（7/5）", "priority": "必備"},
+        {"text": "環球影城門票 + 快速通關 QR Code（7/7）", "priority": "必備"},
+        {"text": "S.E.A. Aquarium 門票（7/6）", "priority": "必備"},
+        {"text": "Skyline Luge 門票（7/6）", "priority": "必備"},
+        {"text": "Wings of Time 門票（7/6，若預約）", "priority": "建議"},
+        {"text": "旅遊平安險保單", "priority": "建議"},
+        {"text": "護照影本（與正本分開放）", "priority": "建議"}
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "電子設備與通訊",
+      "icon": "📱",
+      "items": [
+        {"text": "手機充電器 + 行動電源（飛機須手提）", "priority": "必備"},
+        {"text": "新加坡 eSIM 或實體 SIM 卡（建議出發前先開通）", "priority": "必備"},
+        {"text": "萬用轉接頭（新加坡使用英規三腳插座）", "priority": "必備"},
+        {"text": "手機安裝 Grab App（叫車用）", "priority": "必備"},
+        {"text": "手機安裝 Google Maps（離線地圖下載新加坡）", "priority": "建議"},
+        {"text": "相機 / GoPro + 記憶卡", "priority": "選配"}
+      ]
+    },
+    {
+      "id": "money",
+      "title": "金錢與支付",
+      "icon": "💰",
+      "items": [
+        {"text": "EZ-Link 卡或 Visa 感應卡（搭 MRT 用）", "priority": "必備"},
+        {"text": "新加坡幣現金（建議 SGD 200-300 備用）", "priority": "必備"},
+        {"text": "信用卡（Visa/Mastercard 感應付款最方便）", "priority": "必備"},
+        {"text": "記帳 App 或本群記帳功能", "priority": "建議"}
+      ]
+    },
+    {
+      "id": "clothing",
+      "title": "衣物與穿搭",
+      "icon": "👕",
+      "items": [
+        {"text": "輕便透氣衣物（新加坡7月均溫27-31°C）", "priority": "必備"},
+        {"text": "薄外套或披肩（室內冷氣很強）", "priority": "必備"},
+        {"text": "泳衣（7/8 金沙無邊際泳池）", "priority": "必備"},
+        {"text": "好走的運動鞋（每天步行量大）", "priority": "必備"},
+        {"text": "拖鞋/涼鞋（飯店、泳池用）", "priority": "建議"},
+        {"text": "雨衣或輕便雨傘（7月偶有午後雷陣雨）", "priority": "必備"},
+        {"text": "帽子/遮陽帽", "priority": "建議"}
+      ]
+    },
+    {
+      "id": "health",
+      "title": "健康與防護",
+      "icon": "🏥",
+      "items": [
+        {"text": "防曬乳（SPF50 以上）", "priority": "必備"},
+        {"text": "防蚊液（夜間動物園必備）", "priority": "必備"},
+        {"text": "個人常備藥品（感冒藥、止痛藥、腸胃藥）", "priority": "必備"},
+        {"text": "OK繃 / 水泡貼（走路多）", "priority": "建議"},
+        {"text": "小瓶乾洗手液", "priority": "建議"},
+        {"text": "口罩備用", "priority": "選配"}
+      ]
+    },
+    {
+      "id": "luggage",
+      "title": "行李注意事項",
+      "icon": "🧳",
+      "items": [
+        {"text": "託運行李限重確認（通常每人23kg）", "priority": "必備"},
+        {"text": "行動電源必須手提，不能託運", "priority": "必備"},
+        {"text": "液體隨身限100ml以下、裝夾鏈袋", "priority": "必備"},
+        {"text": "預留回程行李空間（伴手禮/紀念品）", "priority": "建議"},
+        {"text": "行李秤（避免超重）", "priority": "建議"}
+      ]
+    },
+    {
+      "id": "tips",
+      "title": "新加坡旅遊小提醒",
+      "icon": "💡",
+      "items": [
+        {"text": "新加坡嚴禁攜帶口香糖入境", "priority": "注意"},
+        {"text": "室內全面禁菸，違者罰款 SGD 1000 起", "priority": "注意"},
+        {"text": "MRT 禁止飲食，違者罰款 SGD 500", "priority": "注意"},
+        {"text": "計程車/Grab 繫安全帶是法律規定", "priority": "注意"},
+        {"text": "亂丟垃圾罰款 SGD 300 起", "priority": "注意"},
+        {"text": "時差：新加坡與台灣相同（UTC+8），無時差", "priority": "資訊"},
+        {"text": "電壓 230V，插座為英規三腳（Type G）", "priority": "資訊"},
+        {"text": "自來水可直接飲用", "priority": "資訊"},
+        {"text": "緊急電話：999（警察）、995（消防/救護車）", "priority": "資訊"}
+      ]
+    }
+  ]
+}
