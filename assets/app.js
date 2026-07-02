@@ -64,7 +64,7 @@
 
     var todayLink = document.createElement("a");
     todayLink.href = "#daily-guide";
-    todayLink.textContent = "📅 當日行程";
+    todayLink.textContent = "📅 完整行程";
     todayLink.className = "nav-highlight";
     nav.appendChild(todayLink);
 
@@ -97,7 +97,7 @@
     section.id = "daily-guide";
 
     var heading = document.createElement("h2");
-    heading.innerHTML = '📅 當日行程導覽 <span class="en">Today\'s Itinerary</span>';
+    heading.innerHTML = '📅 完整行程導覽 <span class="en">Full Itinerary</span>';
     section.appendChild(heading);
 
     if (!itinerary || !itinerary.days || itinerary.days.length === 0) {
@@ -112,21 +112,11 @@
     var tripStart = itinerary.days[0].date;
     var tripEnd = itinerary.days[itinerary.days.length - 1].date;
 
-    // Find today's schedule
-    var todaySchedule = null;
-    for (var i = 0; i < itinerary.days.length; i++) {
-      if (itinerary.days[i].date === today) {
-        todaySchedule = itinerary.days[i];
-        break;
-      }
-    }
-
     // Status banner
     var banner = document.createElement("div");
     banner.className = "daily-banner";
 
     if (today < tripStart) {
-      // Before trip — show countdown
       var startDate = new Date(tripStart + "T00:00:00+08:00");
       var todayDate = new Date(today + "T00:00:00+08:00");
       var daysLeft = Math.ceil((startDate - todayDate) / (1000 * 60 * 60 * 24));
@@ -134,46 +124,96 @@
       banner.innerHTML = '<div class="banner-icon">✈️</div>' +
         '<div class="banner-text">' +
         '<strong>距離出發還有 ' + daysLeft + ' 天！</strong>' +
-        '<br><span class="banner-sub">出發日：' + tripStart + '（' + itinerary.days[0].theme + '）</span>' +
+        '<br><span class="banner-sub">旅程期間：' + tripStart + ' ~ ' + tripEnd + '</span>' +
         '</div>';
-      section.appendChild(banner);
-
-      // Show next day's preview
-      var preview = document.createElement("div");
-      preview.className = "daily-preview";
-      preview.innerHTML = '<h3>🗓️ Day 1 行程預覽</h3>';
-      preview.appendChild(renderScheduleList(itinerary.days[0]));
-      section.appendChild(preview);
     } else if (today > tripEnd) {
-      // After trip
       banner.className += " banner-ended";
       banner.innerHTML = '<div class="banner-icon">🏠</div>' +
         '<div class="banner-text">' +
         '<strong>旅程已結束，感謝美好回憶！</strong>' +
         '<br><span class="banner-sub">旅程期間：' + tripStart + ' ~ ' + tripEnd + '</span>' +
         '</div>';
-      section.appendChild(banner);
-    } else if (todaySchedule) {
-      // During trip — show today
+    } else {
       banner.className += " banner-today";
       banner.innerHTML = '<div class="banner-icon">🌟</div>' +
         '<div class="banner-text">' +
-        '<strong>Day ' + todaySchedule.day_number + '｜' + escapeHTML(todaySchedule.theme) + '</strong>' +
-        '<br><span class="banner-sub">' + todaySchedule.date + '</span>' +
+        '<strong>旅途進行中！</strong>' +
+        '<br><span class="banner-sub">今天：' + today + '</span>' +
         '</div>';
-      section.appendChild(banner);
-      section.appendChild(renderScheduleList(todaySchedule));
-
-      // Show highlights
-      if (todaySchedule.highlights) {
-        section.appendChild(renderHighlights(todaySchedule.highlights));
-      }
-
-      // Express pass warnings (for USS day)
-      if (todaySchedule.express_pass_warnings) {
-        section.appendChild(renderExpressWarnings(todaySchedule.express_pass_warnings));
-      }
     }
+    section.appendChild(banner);
+
+    // Hotel info
+    if (itinerary.hotels && itinerary.hotels.length > 0) {
+      var hotelBox = document.createElement("div");
+      hotelBox.className = "hotel-info-box";
+      hotelBox.innerHTML = '<h3>🏨 住宿安排</h3>';
+      var hotelList = document.createElement("div");
+      hotelList.className = "hotel-list";
+      itinerary.hotels.forEach(function(h) {
+        hotelList.innerHTML += '<div class="hotel-item">' +
+          '<strong>' + escapeHTML(h.name_zh) + '</strong> ' + escapeHTML(h.name_en) +
+          '<br><span class="hotel-dates">📅 ' + escapeHTML(h.dates) + '</span>' +
+          '<span class="hotel-area">📍 ' + escapeHTML(h.area) + '</span>' +
+          '</div>';
+      });
+      hotelBox.appendChild(hotelList);
+      section.appendChild(hotelBox);
+    }
+
+    // Transport summary
+    if (itinerary.transport_summary) {
+      var ts = itinerary.transport_summary;
+      var transBox = document.createElement("div");
+      transBox.className = "transport-summary-box";
+      transBox.innerHTML = '<h3>🚇 交通方式</h3>' +
+        '<p><strong>主要：</strong>' + escapeHTML(ts.primary) + ' ｜ <strong>輔助：</strong>' + escapeHTML(ts.secondary) + '</p>';
+      if (ts.grab_scenarios && ts.grab_scenarios.length > 0) {
+        transBox.innerHTML += '<p class="grab-note">🚗 建議搭 Grab：' +
+          ts.grab_scenarios.map(function(s) { return escapeHTML(s); }).join('、') + '</p>';
+      }
+      if (ts.note) {
+        transBox.innerHTML += '<p class="transport-note">💡 ' + escapeHTML(ts.note) + '</p>';
+      }
+      section.appendChild(transBox);
+    }
+
+    // Render ALL days
+    itinerary.days.forEach(function (dayData) {
+      var dayBlock = document.createElement("div");
+      dayBlock.className = "day-block";
+      dayBlock.id = "day-" + dayData.day_number;
+
+      // Highlight today
+      if (dayData.date === today) {
+        dayBlock.className += " day-block-today";
+      }
+
+      var dayHeader = document.createElement("h3");
+      dayHeader.className = "day-header";
+      dayHeader.innerHTML = '<span class="day-num">Day ' + dayData.day_number + '</span>' +
+        '<span class="day-date">' + escapeHTML(dayData.date) + '</span>' +
+        '<span class="day-theme">' + escapeHTML(dayData.theme) + '</span>';
+      if (dayData.date === today) {
+        dayHeader.innerHTML += '<span class="today-badge">📍 TODAY</span>';
+      }
+      dayBlock.appendChild(dayHeader);
+
+      // Schedule timeline
+      dayBlock.appendChild(renderScheduleList(dayData));
+
+      // Highlights
+      if (dayData.highlights) {
+        dayBlock.appendChild(renderHighlights(dayData.highlights));
+      }
+
+      // Express pass warnings
+      if (dayData.express_pass_warnings) {
+        dayBlock.appendChild(renderExpressWarnings(dayData.express_pass_warnings));
+      }
+
+      section.appendChild(dayBlock);
+    });
 
     return section;
   }

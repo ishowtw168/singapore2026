@@ -507,3 +507,131 @@ section.category-section h2 .en {
   flex: 1;
   line-height: 1.4;
 }
+
+/* ─── Full Itinerary: Day Blocks ─── */
+
+.day-block {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.day-block-today {
+  border-color: var(--accent);
+  border-width: 2px;
+  box-shadow: 0 2px 8px rgba(208, 1, 27, 0.1);
+}
+
+.day-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.day-num {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.day-date {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.day-theme {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.today-badge {
+  background: #fef9e7;
+  color: #b7950b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+/* ─── Hotel Info ─── */
+
+.hotel-info-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.hotel-info-box h3 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hotel-item {
+  flex: 1;
+  min-width: 200px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+}
+
+.hotel-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hotel-dates, .hotel-area {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ─── Transport Summary ─── */
+
+.transport-summary-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.transport-summary-box h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+
+.transport-summary-box p {
+  margin: 4px 0;
+  font-size: 0.85rem;
+}
+
+.grab-note {
+  color: var(--muted);
+  font-size: 0.82rem !important;
+}
+
+.transport-note {
+  color: #1e8449;
+  font-weight: 600;
+  font-size: 0.82rem !important;
+}
