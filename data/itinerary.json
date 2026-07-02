@@ -1,104 +1,400 @@
 {
   "trip_dates": "2026-07-04 ~ 2026-07-09",
   "timezone": "Asia/Singapore",
-  "updated": "2026-07-01T22:00:00+08:00",
+  "updated": "2026-07-02T09:19:00+08:00",
+  "hotels": [
+    {
+      "name_en": "V Hotel Lavender",
+      "name_zh": "薰衣草酒店",
+      "dates": "7/4～7/7",
+      "area": "Lavender"
+    },
+    {
+      "name_en": "Marina Bay Sands",
+      "name_zh": "金沙酒店",
+      "dates": "7/8",
+      "area": "Marina Bay"
+    }
+  ],
+  "transport_summary": {
+    "primary": "MRT（EZ-Link 或 Visa 感應）",
+    "secondary": "Grab",
+    "grab_scenarios": [
+      "機場→飯店（約 SGD 20～30）",
+      "動物園往返（約30分鐘車程）",
+      "夜間動物園返程",
+      "金沙→樟宜機場（約20分鐘）"
+    ],
+    "note": "其餘全部搭 MRT 即可"
+  },
   "days": [
     {
       "date": "2026-07-04",
       "day_number": 1,
-      "theme": "抵達 + Clarke Quay 周邊",
+      "theme": "抵達新加坡",
       "schedule": [
-        {"time": "11:00", "activity": "抵達新加坡 樟宜機場 T1", "note": "落地後 Avalon Bus / MRT 進市區"},
-        {"time": "14:00", "activity": "Check-in 飯店", "note": "放行李休息"},
-        {"time": "16:00", "activity": "Clarke Quay 海邊", "note": "探索合安頓資"},
-        {"time": "18:00", "activity": "晚餐", "note": "松發肉骨茶 / 了凡飯室"}
+        {
+          "time": "傍晚",
+          "activity": "抵達樟宜機場",
+          "note": "落地後前往飯店"
+        },
+        {
+          "time": "傍晚",
+          "activity": "機場→飯店交通",
+          "note": "Grab 約20分鐘 SGD 20～30 直達門口；或 MRT 樟宜機場站→Expo→轉綠線→Bugis→轉藍線→Lavender 約50分鐘",
+          "transport": {
+            "option_1": {
+              "method": "Grab",
+              "duration": "約20分鐘",
+              "cost": "SGD 20～30",
+              "note": "直接到飯店門口"
+            },
+            "option_2": {
+              "method": "MRT",
+              "route": "樟宜機場站→Expo→轉綠線→Bugis→轉藍線→Lavender",
+              "duration": "約50分鐘"
+            }
+          }
+        },
+        {
+          "time": "19:00",
+          "activity": "晚餐 — Aperia Mall（步行5分鐘）",
+          "note": "推薦：松發肉骨茶、Toast Box、Han's Cafe",
+          "dining": ["松發肉骨茶", "Toast Box", "Han's Cafe"],
+          "location": "Aperia Mall"
+        },
+        {
+          "time": "20:30",
+          "activity": "夜間散步 — Kampong Glam",
+          "note": "欣賞 Sultan Mosque、哈芝巷彩繪街，22:00前返回休息",
+          "attractions": ["Sultan Mosque", "哈芝巷彩繪街"]
+        }
       ],
       "highlights": {
-        "food": ["松發肉骨茶", "了凡飯室"],
-        "shopping": ["機場 Duty Free"],
-        "reminders": ["機場買度 SIM 卡（或先開好 eSIM）", "換新加坡幣（ATM）"]
+        "food": ["松發肉骨茶", "Toast Box", "Han's Cafe"],
+        "shopping": [],
+        "reminders": ["買 SIM 卡或開好 eSIM", "換新加坡幣", "22:00前返回休息，調整時差"]
       }
     },
     {
       "date": "2026-07-05",
       "day_number": 2,
-      "theme": "文化探索 + 朝聖",
+      "theme": "新加坡動物園三園",
       "schedule": [
-        {"time": "08:00", "activity": "早餐", "note": "周邊 Hawker 或 Kopitiam"},
-        {"time": "10:00", "activity": "Gardens by the Bay", "note": "Cloud Forest + Flower Dome"},
-        {"time": "13:00", "activity": "午餐 Marina Bay Sands area", "note": ""},
-        {"time": "15:00", "activity": "ArtScience Museum", "note": "小孩友善適齡"},
-        {"time": "18:00", "activity": "Spectra Water Show", "note": "Marina Bay Sands Event Plaza"}
+        {
+          "time": "08:00",
+          "activity": "出發前往動物園",
+          "note": "建議搭 Grab，約30分鐘車程"
+        },
+        {
+          "time": "08:45",
+          "activity": "抵達 Singapore Zoo",
+          "note": ""
+        },
+        {
+          "time": "09:00～13:00",
+          "activity": "新加坡動物園",
+          "note": "重點：紅毛猩猩區、白老虎、亞洲象、KidzWorld",
+          "attractions": ["紅毛猩猩區", "白老虎", "亞洲象", "KidzWorld"],
+          "shows": [
+            {"time": "10:30", "name": "Splash Safari"},
+            {"time": "11:30", "name": "Animal Friends"}
+          ]
+        },
+        {
+          "time": "12:30",
+          "activity": "午餐 — Ah Meng Restaurant（園區內）",
+          "note": "推薦：海南雞飯、炒粿條",
+          "dining": ["海南雞飯", "炒粿條"],
+          "location": "Ah Meng Restaurant"
+        },
+        {
+          "time": "13:30～17:30",
+          "activity": "River Wonders",
+          "note": "重點：大熊貓館、亞馬遜區、Amazon River Quest",
+          "attractions": ["大熊貓館", "亞馬遜區", "Amazon River Quest"]
+        },
+        {
+          "time": "17:30",
+          "activity": "晚餐 — 園區美食區",
+          "note": "簡單用餐"
+        },
+        {
+          "time": "18:30",
+          "activity": "Night Safari 入園",
+          "note": "建議順序：遊園車→Creatures of the Night Show→Leopard Trail→Fishing Cat Trail",
+          "attractions": ["遊園車", "Creatures of the Night Show", "Leopard Trail", "Fishing Cat Trail"]
+        },
+        {
+          "time": "22:00",
+          "activity": "離開，Grab 回飯店",
+          "note": "車程約30分鐘"
+        }
       ],
       "highlights": {
-        "food": ["Kopitiam 咖椰吐司", "Lau Pa Sat 沙爹"],
-        "shopping": ["Gardens by the Bay Gift Shop"],
-        "reminders": ["Gardens by the Bay 預訂買月票", "帶多喝水(天氣熱)"]
+        "food": ["Ah Meng Restaurant 海南雞飯", "炒粿條"],
+        "shopping": [],
+        "reminders": ["動物園三園預訂票券", "帶防曬、多喝水", "Night Safari 記得帶防蚊液", "全天在園區，帶足體力"]
       }
     },
     {
       "date": "2026-07-06",
       "day_number": 3,
-      "theme": "聖淘沙 + 市區跑",
+      "theme": "聖淘沙一日（天際滑車＋SEA＋時光之翼）",
       "schedule": [
-        {"time": "09:00", "activity": "出發 聖淘沙 Sentosa", "note": "Cable Car 或 Sentosa Express"},
-        {"time": "10:00", "activity": "海洋館 / SEA Aquarium", "note": "小孩最愛"},
-        {"time": "13:00", "activity": "午餐 VivoCity", "note": ""},
-        {"time": "15:00", "activity": "Orchard Road 購物街", "note": "ION Orchard, Takashimaya"},
-        {"time": "18:00", "activity": "晚餐 - Newton Food Centre", "note": "沙嗲遙飯"}
+        {
+          "time": "08:00",
+          "activity": "早餐",
+          "note": "推薦 Kaya Toast",
+          "dining": ["Kaya Toast"]
+        },
+        {
+          "time": "08:30",
+          "activity": "出發前往聖淘沙",
+          "note": "Lavender站→HarbourFront站→Sentosa Express",
+          "transport": {
+            "method": "MRT + Sentosa Express",
+            "route": "Lavender→HarbourFront→Sentosa Express"
+          }
+        },
+        {
+          "time": "10:00～12:00",
+          "activity": "Skyline Luge Singapore（天際滑車）",
+          "note": "建議買4次券以上，推薦 Dragon Trail、Jungle Trail",
+          "attractions": ["Dragon Trail", "Jungle Trail"]
+        },
+        {
+          "time": "12:00",
+          "activity": "午餐 — Resorts World Sentosa",
+          "note": "推薦：Malaysian Food Street、鼎泰豐",
+          "dining": ["Malaysian Food Street", "鼎泰豐"],
+          "location": "Resorts World Sentosa"
+        },
+        {
+          "time": "13:30～17:00",
+          "activity": "S.E.A. Aquarium",
+          "note": "重點：Open Ocean Habitat、Shark Seas、Coral Garden，停留約3～4小時",
+          "attractions": ["Open Ocean Habitat", "Shark Seas", "Coral Garden"]
+        },
+        {
+          "time": "17:30",
+          "activity": "晚餐 — 名勝世界內",
+          "note": "名勝世界內用餐"
+        },
+        {
+          "time": "19:40",
+          "activity": "前往海灘觀看 Wings of Time（時光之翼）",
+          "note": "建議預約20:00場，約20:30結束。若體力允許再前往",
+          "conditional": true
+        },
+        {
+          "time": "21:00",
+          "activity": "返回飯店",
+          "note": ""
+        }
       ],
       "highlights": {
-        "food": ["Newton Food Centre 烤蝦蝦", "VivoCity 美食街"],
-        "shopping": ["ION Orchard", "Takashimaya", "Charles & Keith"],
-        "reminders": ["SEA Aquarium 預訂用票", "帶多防曬霜"]
+        "food": ["Kaya Toast", "Malaysian Food Street", "鼎泰豐"],
+        "shopping": [],
+        "reminders": ["Skyline Luge 建議買4次券以上", "S.E.A. Aquarium 預訂票券", "Wings of Time 視體力決定，建議預約20:00場", "帶防曬霜"]
       }
     },
     {
       "date": "2026-07-07",
       "day_number": 4,
-      "theme": "動物園日 + 牛車水",
+      "theme": "環球影城（含快速通關）",
       "schedule": [
-        {"time": "08:30", "activity": "Singapore Zoo", "note": "早上較涼出發 Mandai Wildlife Reserve"},
-        {"time": "12:00", "activity": "動物園內午餐", "note": "園內餐廳"},
-        {"time": "14:00", "activity": "River Wonders", "note": "淡水魚，大熊貓近距離接觸"},
-        {"time": "17:00", "activity": "回市區休息", "note": "小孩駕累了"},
-        {"time": "19:00", "activity": "晚餐 - Chinatown 牛車水街", "note": "雞飯、海南龍蝦、娘惠頓指"}
+        {
+          "time": "08:00",
+          "activity": "出發前往環球影城",
+          "note": "建議08:30前到門口排隊"
+        },
+        {
+          "time": "09:00",
+          "activity": "開園入場",
+          "note": "即使有 Express Pass 也優先衝熱門設施"
+        },
+        {
+          "time": "09:00～12:00",
+          "activity": "上午必玩（依順序）",
+          "note": "1. Battlestar Galactica 紅藍雙軌 ★★★★★\n2. TRANSFORMERS The Ride ★★★★★\n3. Jurassic World: Rapids Adventure ★★★★★\n4. Revenge of the Mummy ★★★★★",
+          "must_ride": [
+            {"name": "Battlestar Galactica（紅藍雙軌）", "rating": "★★★★★"},
+            {"name": "TRANSFORMERS The Ride", "rating": "★★★★★"},
+            {"name": "Jurassic World: Rapids Adventure", "rating": "★★★★★"},
+            {"name": "Revenge of the Mummy", "rating": "★★★★★"}
+          ]
+        },
+        {
+          "time": "12:00",
+          "activity": "午餐",
+          "note": "推薦：Mel's Drive-In、Goldilocks",
+          "dining": ["Mel's Drive-In", "Goldilocks"]
+        },
+        {
+          "time": "13:00～17:00",
+          "activity": "下午補玩",
+          "note": "Sesame Street、Puss in Boots、WaterWorld",
+          "attractions": ["Sesame Street", "Puss in Boots", "WaterWorld"]
+        },
+        {
+          "time": "17:30",
+          "activity": "離園，前往 VivoCity 晚餐",
+          "note": "推薦：海底撈、PUTIEN莆田",
+          "dining": ["海底撈", "PUTIEN莆田"],
+          "location": "VivoCity"
+        }
       ],
       "highlights": {
-        "food": ["文慶街雞飯", "娘惠頓指", "海南龍蝦"],
-        "shopping": ["Chinatown 伴手禮店"],
-        "reminders": ["動物園開園時間確認", "帶多水", "防曬霜"]
-      }
+        "food": ["Mel's Drive-In", "Goldilocks", "海底撈", "PUTIEN莆田"],
+        "shopping": [],
+        "reminders": [
+          "⚠️ 快速通關不含但必玩：Minion Mayhem（Illumination's Minion Land）— 近年最熱門，即使有快速通關仍常排隊，建議早上先玩",
+          "⚠️ Meet & Greet（小小兵、史瑞克等角色）— 快速通關無效，想拍照需提早排",
+          "⚠️ 煙火或特殊活動 — 快速通關無效，需提早卡位",
+          "建議08:30前到門口排隊"
+        ]
+      },
+      "express_pass_warnings": [
+        {
+          "item": "Minion Mayhem / Illumination's Minion Land",
+          "reason": "近年最熱門，即使有快速通關仍常排隊",
+          "tip": "建議早上先玩"
+        },
+        {
+          "item": "Meet & Greet（小小兵、史瑞克等）",
+          "reason": "快速通關無效",
+          "tip": "想拍照需提早排"
+        },
+        {
+          "item": "煙火或特殊活動",
+          "reason": "快速通關無效",
+          "tip": "需提早卡位"
+        }
+      ]
     },
     {
       "date": "2026-07-08",
       "day_number": 5,
-      "theme": "自由活動 + 最後購物",
+      "theme": "牛車水＋金沙酒店夜景",
       "schedule": [
-        {"time": "09:00", "activity": "新加坡 Flyer 或 Jewel Changi 星耀大瀑", "note": "擇寬容量選擇"},
-        {"time": "12:00", "activity": "午餐 + Takashimaya B2 駝飯料理 / 最後補貨", "note": ""},
-        {"time": "15:00", "activity": "最後自由時光", "note": "自由散步 / 裝貨 / 飯店泡池"},
-        {"time": "18:00", "activity": "晚餐 - 最後晚大", "note": "挑揀好傢伙"}
+        {
+          "time": "09:00",
+          "activity": "MRT 至 Chinatown 牛車水",
+          "note": "購買紀念品",
+          "transport": {
+            "method": "MRT",
+            "destination": "Chinatown站"
+          }
+        },
+        {
+          "time": "09:30～12:00",
+          "activity": "牛車水買紀念品",
+          "note": "推薦：魚尾獅磁鐵、斑蘭餅、肉骨茶包、咖椰醬、TWG茶包",
+          "shopping": ["魚尾獅磁鐵", "斑蘭餅", "肉骨茶包", "咖椰醬", "TWG茶包"]
+        },
+        {
+          "time": "12:00",
+          "activity": "午餐 — Maxwell Food Centre",
+          "note": "必吃：天天海南雞飯、真真粥品",
+          "dining": ["天天海南雞飯", "真真粥品"],
+          "location": "Maxwell Food Centre"
+        },
+        {
+          "time": "14:00",
+          "activity": "前往 Marina Bay Sands 辦理入住",
+          "note": "金沙酒店 Check-in"
+        },
+        {
+          "time": "15:00～18:00",
+          "activity": "無邊際泳池 + SkyPark",
+          "note": "享受金沙頂樓設施",
+          "attractions": ["Infinity Pool", "SkyPark"]
+        },
+        {
+          "time": "19:45",
+          "activity": "金沙水舞秀 Spectra Light and Water Show",
+          "note": "Marina Bay Sands Event Plaza",
+          "attractions": ["Spectra Light and Water Show"]
+        },
+        {
+          "time": "20:30",
+          "activity": "步行至 Gardens by the Bay",
+          "note": ""
+        },
+        {
+          "time": "20:45",
+          "activity": "超級樹燈光秀 Supertree Grove",
+          "note": "最佳場次。可加碼 OCBC Skyway 夜景超美",
+          "attractions": ["Supertree Grove 燈光秀", "OCBC Skyway"]
+        }
       ],
       "highlights": {
-        "food": ["最後機會試試", "BreadTalk / Toast Box"],
-        "shopping": ["Jewel Changi DTF", "Takashimaya"],
-        "reminders": ["確認伴手禮白單完了", "明天飛機更信過查"]
+        "food": ["天天海南雞飯", "真真粥品"],
+        "shopping": ["魚尾獅磁鐵", "斑蘭餅", "肉骨茶包", "咖椰醬", "TWG茶包"],
+        "reminders": ["金沙泳池記得帶泳衣", "Spectra 水舞秀 19:45 開始", "超級樹燈光秀 20:45 最佳場次", "可加碼 OCBC Skyway"]
       }
     },
     {
       "date": "2026-07-09",
       "day_number": 6,
-      "theme": "回家 — 返程",
+      "theme": "星耀樟宜半日遊＋返程",
       "schedule": [
-        {"time": "08:00", "activity": "Check-out 退房", "note": "確認行李打包"},
-        {"time": "10:00", "activity": "往機場", "note": "提早到機場 Jewel 最後逛"},
-        {"time": "12:00", "activity": "飛機", "note": "確認訂位 / Airline app checkin"}
+        {
+          "time": "09:00",
+          "activity": "金沙退房",
+          "note": "建議09:00離開，Grab至機場約20分鐘",
+          "transport": {
+            "method": "Grab",
+            "duration": "約20分鐘",
+            "route": "Marina Bay Sands→樟宜機場"
+          }
+        },
+        {
+          "time": "09:30",
+          "activity": "抵達星耀樟宜，寄放行李",
+          "note": "Jewel Changi Airport"
+        },
+        {
+          "time": "10:00",
+          "activity": "Rain Vortex 世界最高室內瀑布",
+          "note": "必拍！",
+          "attractions": ["Rain Vortex"]
+        },
+        {
+          "time": "10:30",
+          "activity": "森林谷 Shiseido Forest Valley",
+          "note": "",
+          "attractions": ["Shiseido Forest Valley"]
+        },
+        {
+          "time": "11:00",
+          "activity": "Canopy Park",
+          "note": "有小朋友非常推薦",
+          "attractions": ["Canopy Park"]
+        },
+        {
+          "time": "12:00",
+          "activity": "午餐",
+          "note": "推薦：松發肉骨茶、Burger & Lobster、Shake Shack",
+          "dining": ["松發肉骨茶", "Burger & Lobster", "Shake Shack"]
+        },
+        {
+          "time": "13:00～14:30",
+          "activity": "最後補貨紀念品",
+          "note": "推薦在星耀樟宜一次買齊",
+          "shopping": ["TWG茶葉", "Bacha Coffee", "IRVINS鹹蛋魚皮", "Bengawan Solo斑蘭蛋糕", "林志源肉乾", "虎標藥油"]
+        },
+        {
+          "time": "15:00",
+          "activity": "前往航廈辦理登機",
+          "note": "確認航班時間，提早到航廈"
+        }
       ],
       "highlights": {
-        "food": ["Jewel Changi 最後一餐"],
-        "shopping": ["Jewel Changi Duty Free 最後機會"],
-        "reminders": ["行李超重檢查（每人 23kg）", "動情 DTF 是否記得了", "切換eSIM / SIM", "收攏行動電池 (飛機手提行)"]
+        "food": ["松發肉骨茶", "Burger & Lobster", "Shake Shack"],
+        "shopping": ["TWG茶葉", "Bacha Coffee", "IRVINS鹹蛋魚皮", "Bengawan Solo斑蘭蛋糕", "林志源肉乾", "虎標藥油"],
+        "reminders": ["行李超重檢查（每人23kg）", "確認航班時間", "寄放行李後再逛", "Canopy Park 適合小朋友"]
       }
     }
   ]

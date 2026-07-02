@@ -1,8 +1,23 @@
 {
   "trip_start": "2026-07-04",
   "trip_end": "2026-07-09",
-  "hotel": { "en_name": "TBD (Allen to provide)", "zh_name": "待提供", "address": "", "area": "" },
-  "last_updated": "2026-07-01",
+  "hotels": [
+    {
+      "en_name": "V Hotel Lavender",
+      "zh_name": "薰衣草酒店",
+      "address": "70 Jellicoe Road, Singapore 208767",
+      "area": "Lavender",
+      "dates": "2026-07-04 ~ 2026-07-07"
+    },
+    {
+      "en_name": "Marina Bay Sands",
+      "zh_name": "金沙酒店",
+      "address": "10 Bayfront Avenue, Singapore 018956",
+      "area": "Marina Bay",
+      "dates": "2026-07-08"
+    }
+  ],
+  "last_updated": "2026-07-02",
   "categories": ["transport", "events", "food", "attractions", "souvenirs", "experiences"],
   "category_labels": {
     "transport": { "zh": "交通", "en": "Transport" },
