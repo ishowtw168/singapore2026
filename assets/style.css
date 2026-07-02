@@ -79,6 +79,11 @@ html, body {
   align-items: center;
 }
 
+.category-nav a.nav-highlight {
+  background: rgba(255,255,255,0.35);
+  font-weight: 600;
+}
+
 .category-nav a:active,
 .category-nav a:focus {
   background: rgba(255,255,255,0.32);

@@ -55,16 +55,18 @@
     var labels = (meta && meta.category_labels) || {};
     var cats = (meta && meta.categories) || CATEGORIES;
 
-    // Add special nav items first
-    var todayLink = document.createElement("a");
-    todayLink.href = "#daily-guide";
-    todayLink.textContent = "📅 當日行程";
-    nav.appendChild(todayLink);
-
+    // Add special nav items first (before category tabs)
     var prepLink = document.createElement("a");
     prepLink.href = "#preparation";
     prepLink.textContent = "✅ 行前準備";
+    prepLink.className = "nav-highlight";
     nav.appendChild(prepLink);
+
+    var todayLink = document.createElement("a");
+    todayLink.href = "#daily-guide";
+    todayLink.textContent = "📅 當日行程";
+    todayLink.className = "nav-highlight";
+    nav.appendChild(todayLink);
 
     cats.forEach(function (cat) {
       var label = labels[cat] || { zh: cat, en: cat };
@@ -460,11 +462,11 @@
 
       content.innerHTML = "";
 
-      // 1. Daily itinerary guide (top)
-      content.appendChild(renderDailyGuide(itinerary));
-
-      // 2. Pre-trip preparation
+      // 1. Pre-trip preparation (top — most useful before departure)
       content.appendChild(renderPreparation(prepData));
+
+      // 2. Daily itinerary guide
+      content.appendChild(renderDailyGuide(itinerary));
 
       // 3. Category sections
       var labels = (meta && meta.category_labels) || {};
