@@ -270,6 +270,22 @@ When a user sends expense info in natural language:
   - "記帳 ION 買衣服 89" → category=購物, amount=89, currency=S$
   - Photo of receipt → OCR → confirm → record with source="OCR receipt"
 
+## Landscape & Garden References (景觀園藝參考)
+
+Allen 在旅途中拍攝的景觀園藝設計參考照片，記錄於 `docs/landscape-references.md`。
+
+**用途：** 日後景觀園藝規劃的設計靈感與案例參考
+
+**當使用者傳送照片並提到「景觀參考」、「園藝參考」、「景觀設計」等關鍵字時：**
+1. 上傳照片至 Google Photos 相簿（檔名 `landscape-ref-XX`）
+2. 閱讀照片內容，辨識植物種類與設計特色
+3. 更新 `docs/landscape-references.md`（新增索引列 + 詳細筆記）
+4. Push 更新至 repo
+
+**查詢時：** 讀取 `docs/landscape-references.md` 即可查閱所有參考照片及筆記。
+
+---
+
 ## Item Schema (per entry in data/*.json items[])
 
 Required: `id`, `en_name`, `zh_name`, `zh_desc`
